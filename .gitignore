@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Vscode
+.vscode/
+
+# Excluded files
+
+# Excluded folders
+Data
