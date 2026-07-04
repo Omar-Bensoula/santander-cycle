@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)] [![Python](https://img.shields.io/badge/python-3.8%2B-brightgreen)] [![PostgreSQL](https://img.shields.io/badge/postgresql-18%2B-blue.svg)]
 
-In this project we explore London Santander Cycles usage statistics from [TfL Open Data](https://cycling.data.tfl.gov.uk/#!usage-stats%2F), containing information on 9M+ trips across the network, a year's worth of journey data, to understand usage patterns. A Python ingestion script loads the raw journey data into PostgreSQL, followed by a SQL transformation step that produces a clean, typed table ready for analysis.
+In this project we explore London Santander Cycles usage statistics from [TfL Open Data](https://cycling.data.tfl.gov.uk/#!usage-stats%2F), containing information on 9M+ trips across the network, a year's worth of journey data, to understand usage patterns. A Python ingestion script loads the raw journey data into PostgreSQL, followed by an SQL transformation step that produces a clean, typed table ready for analysis.
 
 **Status: data ingestion and transformation complete, analysis not yet started.**
 
@@ -13,19 +13,6 @@ In this project we explore London Santander Cycles usage statistics from [TfL Op
 The data consists of the combination of semi-monthly CSV exports of Santander Cycles journey data from [TfL Open Data](https://cycling.data.tfl.gov.uk/#!usage-stats%2F) between June 2025 and May 2026. Below is a sample from the first half of June where each row represents a single hire:
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
